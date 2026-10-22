@@ -1,18 +1,246 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Leadie</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadie | Digitale Lernbegleiterin für Führungskräfte</title>
+
+<style>
+
+:root{
+    --suva-red:#E30613;
+    --suva-dark:#1f2937;
+    --suva-light:#f5f7fa;
+    --suva-grey:#6b7280;
+    --white:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Segoe UI", Arial, sans-serif;
+    background:var(--suva-light);
+    color:var(--suva-dark);
+    line-height:1.6;
+}
+
+.hero{
+    background:linear-gradient(135deg,#E30613,#ff5865);
+    color:white;
+    padding:70px 20px;
+}
+
+.hero-content{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+}
+
+.hero img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:24px;
+    background:white;
+    padding:8px;
+}
+
+.hero-text{
+    max-width:650px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.15rem;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    margin-bottom:30px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.card h2{
+    margin-bottom:15px;
+    color:#E30613;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.feature{
+    background:#fafafa;
+    border-left:5px solid #E30613;
+    padding:20px;
+    border-radius:10px;
+}
+
+.feature h3{
+    margin-bottom:10px;
+}
+
+.button{
+    display:inline-block;
+    background:#E30613;
+    color:white;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:10px;
+    font-weight:600;
+    margin-top:20px;
+}
+
+.button:hover{
+    background:#c40510;
+}
+
+.chatframe{
+    width:100%;
+    height:850px;
+    border:none;
+    border-radius:15px;
+    background:white;
+}
+
+.footer{
+    text-align:center;
+    padding:30px;
+    color:var(--suva-grey);
+    font-size:0.9rem;
+}
+
+.note{
+    font-size:0.9rem;
+    color:#6b7280;
+    margin-top:15px;
+}
+
+</style>
 </head>
+
 <body>
 
-<h1>Willkommen bei Leadie</h1>
+<section class="hero">
 
-<p>Dein virtueller Lerncoach für Führungskräfte.</p>
+<div class="hero-content">
 
-<a href="BOT-LINK-HIER">
-  <button>Leadie starten</button>
-</a>
+<div>
+    leadie.png
+</div>
+
+<div class="hero-text">
+    <h1>Leadie</h1>
+
+    <p>
+        Deine digitale Lernbegleiterin für Führungskräfte.
+        Leadie unterstützt dich dabei, die Inhalte des Kurses
+        «ASGS als Führungskraft» nachhaltig in deinen Führungsalltag
+        zu integrieren.
+    </p>
+
+    #chat
+        Jetzt starten
+    </a>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Willkommen</h2>
+
+        <p>
+            Lernen endet nicht mit dem Kursabschluss. Leadie begleitet
+            dich beim Lerntransfer, unterstützt dich bei Reflexionsfragen
+            und hilft dir dabei, Arbeitssicherheit und Gesundheitsschutz
+            wirksam in deinem Verantwortungsbereich umzusetzen.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Was Leadie für dich tun kann</h2>
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>🎯 Lerntransfer</h3>
+                <p>Unterstützung bei der Umsetzung von Kursinhalten in die Praxis.</p>
+            </div>
+
+            <div class="feature">
+                <h3>💡 Reflexion</h3>
+                <p>Begleitung bei Herausforderungen im Führungsalltag.</p>
+            </div>
+
+            <div class="feature">
+                <h3>📚 Wissensauffrischung</h3>
+                <p>Schneller Zugriff auf relevante Lerninhalte und Impulse.</p>
+            </div>
+
+            <div class="feature">
+                <h3>🤝 Persönliche Begleitung</h3>
+                <p>Digitale Unterstützung jederzeit und ortsunabhängig.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="card" id="chat">
+
+        <h2>Chat mit Leadie</h2>
+
+        <p>
+            Starte jetzt das Gespräch mit deiner digitalen Lernbegleiterin.
+        </p>
+
+        <br>
+
+        BOT_URL_HIER_EINSETZEN
+        </iframe>
+
+        <p class="note">
+            Falls der Chat nicht angezeigt wird, öffne Leadie direkt über den bereitgestellten Link.
+        </p>
+
+    </div>
+
+</div>
+
+<div class="footer">
+    © Leadie | Lerntransfer für Führungskräfte
+</div>
 
 </body>
 </html>
